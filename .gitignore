@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.DS_Store
+Thumbs.db
+
+artifacts/probe_result.json
+artifacts/network/*.json
+artifacts/network/*.log
+artifacts/audio/*.wav
+artifacts/audio/*.mp3
+artifacts/audio/*.m4a
+artifacts/audio/*.aac
+
