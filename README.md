@@ -13,6 +13,7 @@
 - `Product dossier:` `docs/product_dossier.md`
 - `Help channels:` `docs/help_channels.md`
 - `Posting plan:` `docs/posting_plan.md`
+- `Social posts:` `docs/social_posts.md`
 - `Contributing:` `CONTRIBUTING.md`
 - `Artifacts:` `artifacts/README.md`
 
@@ -82,6 +83,7 @@ We are looking for people experienced with:
 - `docs/product_dossier.md` — collected product and hardware notes
 - `docs/help_channels.md` — communities and forums to ask for help
 - `docs/posting_plan.md` — where to post and in what order
+- `docs/social_posts.md` — ready-to-post X / forum copy
 - `docs/forum_post_en.md` — English post template
 - `docs/forum_post_zh.md` — Chinese post template
 - `docs/public_sources.md` — public references used so far
@@ -167,6 +169,7 @@ Please only investigate hardware you legally own. Do not attack third-party syst
 - `产品档案：` `docs/product_dossier.md`
 - `求助渠道：` `docs/help_channels.md`
 - `发帖方案：` `docs/posting_plan.md`
+- `社交短帖：` `docs/social_posts.md`
 - `参与方式：` `CONTRIBUTING.md`
 - `证据目录：` `artifacts/README.md`
 
@@ -245,6 +248,7 @@ Please only investigate hardware you legally own. Do not attack third-party syst
 - `docs/product_dossier.md` — 产品资料档案
 - `docs/help_channels.md` — 求助渠道清单
 - `docs/posting_plan.md` — 发帖顺序与执行建议
+- `docs/social_posts.md` — X / 论坛短帖文案
 - `docs/forum_post_en.md` — 英文发帖模板
 - `docs/forum_post_zh.md` — 中文发帖模板
 - `docs/public_sources.md` — 公开来源清单
