@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netease Sing Cloud Speaker Rescue</title>
+    <meta
+      name="description"
+      content="A public collaboration hub for reviving the abandoned Netease Sing Cloud Speaker."
+    />
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #17202a;
+        --muted: #61717f;
+        --line: #d9e1e8;
+        --paper: #fbfcfd;
+        --panel: #ffffff;
+        --accent: #cf3f3f;
+        --accent-ink: #8f2626;
+        --blue: #2366a8;
+        --green: #287457;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--blue);
+        text-decoration-thickness: 0.08em;
+        text-underline-offset: 0.18em;
+      }
+
+      .hero {
+        padding: 56px 20px 28px;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.9), rgba(251,252,253,0.98)),
+          radial-gradient(circle at 20% 0%, rgba(207,63,63,0.16), transparent 34%),
+          radial-gradient(circle at 88% 12%, rgba(35,102,168,0.14), transparent 30%);
+        border-bottom: 1px solid var(--line);
+      }
+
+      .wrap {
+        width: min(1120px, calc(100% - 40px));
+        margin: 0 auto;
+      }
+
+      .title {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 28px;
+        align-items: center;
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 4.6vw, 4.2rem);
+        line-height: 1.04;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        max-width: 760px;
+        margin: 0;
+        color: var(--muted);
+        font-size: 1.12rem;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 10px 16px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        color: var(--ink);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .button.primary {
+        background: var(--accent);
+        border-color: var(--accent);
+        color: #fff;
+      }
+
+      .photos {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .photos img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        border-radius: 8px;
+        border: 1px solid var(--line);
+        background: #eef2f5;
+      }
+
+      main {
+        padding: 36px 20px 60px;
+      }
+
+      section {
+        margin: 0 auto 36px;
+      }
+
+      h2 {
+        margin: 0 0 14px;
+        font-size: clamp(1.45rem, 2.4vw, 2rem);
+        line-height: 1.18;
+      }
+
+      h3 {
+        margin: 26px 0 10px;
+        font-size: 1.12rem;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+
+      .card {
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+      }
+
+      .card strong {
+        display: block;
+        margin-bottom: 6px;
+      }
+
+      .muted {
+        color: var(--muted);
+      }
+
+      ul {
+        padding-left: 1.25rem;
+        margin: 0;
+      }
+
+      li + li {
+        margin-top: 6px;
+      }
+
+      code {
+        padding: 0.12em 0.35em;
+        border: 1px solid var(--line);
+        border-radius: 5px;
+        background: #f3f6f8;
+        font-family: "SFMono-Regular", Consolas, monospace;
+        font-size: 0.92em;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+      }
+
+      .lang {
+        border-top: 1px solid var(--line);
+        padding-top: 34px;
+      }
+
+      .footer {
+        padding: 26px 20px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        background: #fff;
+      }
+
+      @media (max-width: 820px) {
+        .title,
+        .split,
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding-top: 34px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="wrap title">
+        <div>
+          <h1>Netease Sing Cloud Speaker Rescue</h1>
+          <p class="subtitle">
+            A public collaboration hub for reviving the abandoned
+            <strong>Netease Sing Cloud Speaker</strong>
+            <span lang="zh-CN">（网易三音云音箱）</span>.
+          </p>
+          <div class="actions">
+            <a class="button primary" href="https://github.com/zixiang2008/wangyiyun">GitHub Repository</a>
+            <a class="button" href="https://github.com/zixiang2008/wangyiyun/issues">Open an Issue</a>
+          </div>
+        </div>
+        <div class="photos" aria-label="Device photos">
+          <img src="assets/device-exterior.jpg" alt="Netease speaker exterior" />
+          <img src="assets/app-interface.jpg" alt="App interface showing the speaker" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="wrap">
+        <div class="grid">
+          <div class="card">
+            <strong>Status</strong>
+            <span class="muted">Documentation, evidence collection, and public help request.</span>
+          </div>
+          <div class="card">
+            <strong>Goal</strong>
+            <span class="muted">Attract BLE, firmware, UART, embedded Linux, and hardware experts.</span>
+          </div>
+          <div class="card">
+            <strong>Not Yet</strong>
+            <span class="muted">A finished unlock, firmware image, or replacement app.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="wrap split">
+        <div>
+          <h2>What We Know</h2>
+          <ul>
+            <li>Public clues mention <code>Allwinner R16-J</code>.</li>
+            <li>Wireless clues include <code>AP6236</code> and <code>BCM43436</code>.</li>
+            <li>Teardown clues show <code>Mini-USB</code>, <code>Reset</code>, and reserved <code>TF</code> footprint.</li>
+            <li>The speaker has no practical 3.5mm input path and does not currently behave like a normal Bluetooth speaker.</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Help Needed</h2>
+          <ul>
+            <li>BLE / Bluetooth reverse engineering</li>
+            <li>UART or debug port identification</li>
+            <li>Firmware extraction and inspection</li>
+            <li>Local network service discovery</li>
+            <li>Repurposing for Home Assistant or AI voice output</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="wrap">
+        <h2>Useful Links</h2>
+        <div class="grid">
+          <a class="card" href="https://github.com/zixiang2008/wangyiyun/blob/main/docs/product_dossier.md">
+            <strong>Product Dossier</strong>
+            <span class="muted">Collected public product and hardware notes.</span>
+          </a>
+          <a class="card" href="https://github.com/zixiang2008/wangyiyun/blob/main/docs/research_checklist.md">
+            <strong>Research Checklist</strong>
+            <span class="muted">Evidence still needed for the next phase.</span>
+          </a>
+          <a class="card" href="https://github.com/zixiang2008/wangyiyun/blob/main/docs/social_posts.md">
+            <strong>Posting Kit</strong>
+            <span class="muted">Ready-to-post X and forum messages.</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="wrap lang" lang="zh-CN">
+        <h2>网易三音云音箱求助协作项目</h2>
+        <p>
+          这个项目用于整理网易三音云音箱的公开资料、实物证据和逆向求助信息。目标不是让普通用户自己写 App，
+          而是让懂蓝牙、固件、UART、嵌入式 Linux、硬件改造的朋友能快速接手。
+        </p>
+        <div class="split">
+          <div>
+            <h3>目前最想请教</h3>
+            <ul>
+              <li><code>Allwinner R16-J + AP6236 + BCM43436</code> 应优先从哪里找调试入口？</li>
+              <li><code>Mini-USB</code> 更像调试口、产测口，还是普通维护接口？</li>
+              <li>如果 BLE 还能广播，是否可能保留配网特征值？</li>
+              <li>如果云服务彻底失效，是否应直接走硬件复用路线？</li>
+            </ul>
+          </div>
+          <div>
+            <h3>最需要补充的证据</h3>
+            <ul>
+              <li>底部铭牌高清图</li>
+              <li>主板正反面高清图</li>
+              <li>路由器 DHCP / MAC 前缀 / 主机名</li>
+              <li>蓝牙扫描结果</li>
+              <li><code>Mini-USB</code> 接电脑后的识别结果</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap">
+        Please only investigate hardware you legally own. Do not attack third-party systems or networks.
+      </div>
+    </footer>
+  </body>
+</html>
